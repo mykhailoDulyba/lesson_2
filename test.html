@@ -8,44 +8,129 @@
     <title>Form Sample</title>
 </head>
 <body>
-    
-    
-    <form method="POST" action="https://formspree.io/mykhailodulyba@gmail.com">
-        <label for="client-name">Name: </label>
-        <input type="text" name="client-name" placeholder="Name" id="client-name"
-            required>
-        <br>
-        <label>Password:
-            <input type="password" name="client-password" placeholder="Password"
-            required>
-        </label>
-        <br>
-        <label>Email:
-            <input type="email" name="client-email" placeholder="Email" required>
-        </label>
-        <br>
-        <label>Passport Code:
-            <input type="text" name="client-passport" placeholder="AB123456" 
-             required pattern="[A-Z]{2}[\d]{6}" title="AB123456">
-        </label>
-        <br>
-        <label>Gender:</label>
-        <br>
-        <label>
-            <input type="radio" name="client-gender" value="male" checked>Male
-        </label>
-        <br>
-        <label>
-            <input type="radio" name="client-gender" value="female">Female
-        </label>
-        <br>
-        <label>
-            <input type="radio" name="client-gender" value="other">Other
-        </label>
-        <br>
-        <input type="submit" value="SEND">
-        <input type="reset">
-    </form>
-    
-</body>
+    <section>
+        <header>
+            <h1>Тест на знання HTML</h1>
+        </header>
+        <form method="POST" action="https://formspree.io/mykhailodulyba@gmail.com">
+            <label >1. Позначте empty tag?</label>
+            <br>
+            <label >
+                <input type="radio" name="question-1" value="br">
+            br
+            </label>
+            <label >
+                <input type="radio" name="question-1" value="div">
+            div
+            </label>            
+            <label >
+                <input type="radio" name="question-1" value="section">
+            section
+            </label>
+            <br>
+            <br>
+            <label >2. Встановіть теги в порядку організації HTML структури?</label>
+            <br>
+            <select name="question-2">
+               <option value="footer">footer</option>
+               <option value="nav">nav</option>
+               <option value="header">header</option>
+               <option value="article">article</option>
+            </select>
+            <select name="question-2">
+               <option value="footer">footer</option>
+               <option value="nav">nav</option>
+               <option value="header">header</option>
+               <option value="article" selected>article</option>
+            </select>
+            <select name="question-2">
+               <option value="footer">footer</option>
+               <option value="nav">nav</option>
+               <option value="header" selected>header</option>
+               <option value="article">article</option>
+            </select>
+            <select name="question-2">
+               <option value="footer" >footer</option>
+               <option value="nav" selected>nav</option>
+               <option value="header">header</option>
+               <option value="article">article</option>
+            </select>
+            <br>
+            <br>
+            <label >3. Виберіть теги що використовують для побудови таблиці?</label>
+            <br>
+            <select name="question-3">
+               <option value="table">table</option>
+               <option value="div">div</option>
+               <option value="section">section</option>
+               <option value="h1" selected>h1</option>
+            </select>
+            <select name="question-3">
+               <option value="input">input</option>
+               <option value="tr">tr</option>
+               <option value="form" selected>form</option>
+               <option value="a" >a</option>
+            </select>
+            <select name="question-3">
+               <option value="footer">footer</option>
+               <option value="span" selected>span</option>
+               <option value="th">th</option>
+               <option value="li" >li</option>
+            </select>
+            <br>
+            <br>
+            <label >4. Позначте еуг який використовується для позначення заголовка в таблиці?</label>
+            <br>
+            <label >
+                <input type="radio" name="question-4" value="tr">
+            tr
+            </label>
+            <label >
+                <input type="radio" name="question-4" value="td">td
+            </label>            
+            <label >
+                <input type="radio" name="question-4" value="th">th
+            </label>
+            <br>
+            <br>
+            <label >5. Ordered List ?</label>
+            <br>
+            <label >
+                <input type="radio" name="question-5" value="ul">
+            ul
+            </label>
+            <label >
+                <input type="radio" name="question-5" value="ol">
+            ol
+            </label>            
+            <label >
+                <input type="radio" name="question-5" value="th">
+            th
+            </label>
+            <br>
+            <br>
+            <label for="">6 Виберіть колір емблеми HTML?</label>
+            <br>
+            <input type="color" name="question-6">
+            <br>
+            <input type="button" onclick="alert('Як апельсин =))')" value="Підказка">
+            <br>
+            <br>
+            <label for="">7 Виберіть два атрибути які використовуються для тегу form?</label>
+            <br>
+              <input type="checkbox" name="question-7" value="method">method
+              <input type="checkbox" name="question-7" value="name">name
+              <input type="checkbox" name="question-7" value="action">action
+              <input type="checkbox" name="question-7" value="type">type
+            <br>
+            <br>
+            <label for="">8 Виберіть два атрибути які використовуються для тегу form?</label>
+            <br>
+            <br>
+            <br>
+            <input type="submit" value="send">
+        </form>
+        
+    </section>
+    </body>
 </html>
