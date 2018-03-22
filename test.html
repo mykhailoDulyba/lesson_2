@@ -1,0 +1,51 @@
+     
+     <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form Sample</title>
+</head>
+<body>
+    
+    
+    <form method="POST" action="https://formspree.io/mykhailodulyba@gmail.com">
+        <label for="client-name">Name: </label>
+        <input type="text" name="client-name" placeholder="Name" id="client-name"
+            required>
+        <br>
+        <label>Password:
+            <input type="password" name="client-password" placeholder="Password"
+            required>
+        </label>
+        <br>
+        <label>Email:
+            <input type="email" name="client-email" placeholder="Email" required>
+        </label>
+        <br>
+        <label>Passport Code:
+            <input type="text" name="client-passport" placeholder="AB123456" 
+             required pattern="[A-Z]{2}[\d]{6}" title="AB123456">
+        </label>
+        <br>
+        <label>Gender:</label>
+        <br>
+        <label>
+            <input type="radio" name="client-gender" value="male" checked>Male
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="client-gender" value="female">Female
+        </label>
+        <br>
+        <label>
+            <input type="radio" name="client-gender" value="other">Other
+        </label>
+        <br>
+        <input type="submit" value="SEND">
+        <input type="reset">
+    </form>
+    
+</body>
+</html>
