@@ -79,7 +79,7 @@
             </select>
             <br>
             <br>
-            <label >4. Позначте еуг який використовується для позначення заголовка в таблиці?</label>
+            <label >4. Позначте тег який використовується для позначення заголовка в таблиці?</label>
             <br>
             <label >
                 <input type="radio" name="question-4" value="tr">
@@ -109,14 +109,14 @@
             </label>
             <br>
             <br>
-            <label for="">6 Виберіть колір емблеми HTML?</label>
+            <label>6 Виберіть колір емблеми HTML?</label>
             <br>
             <input type="color" name="question-6">
             <br>
             <input type="button" onclick="alert('Як апельсин =))')" value="Підказка">
             <br>
             <br>
-            <label for="">7 Виберіть два атрибути які використовуються для тегу form?</label>
+            <label>7 Виберіть два атрибути які використовуються для тегу form?</label>
             <br>
               <input type="checkbox" name="question-7" value="method">method
               <input type="checkbox" name="question-7" value="name">name
@@ -124,13 +124,31 @@
               <input type="checkbox" name="question-7" value="type">type
             <br>
             <br>
-            <label for="">8 Виберіть два атрибути які використовуються для тегу form?</label>
+            <label>8 Напишіть вам відомі значення для атрибуту type ?</label>
+            <br>
+             <textarea name="question-8" rows="10" cols="30"></textarea>
             <br>
             <br>
+            <label >Дані студента</label>
             <br>
-            <input type="submit" value="send">
+            <label >Name:
+                <input type="text" name="name" required>
+            </label>
+            <br>
+            <label >Email:
+                <input type="email" name="email" required>
+            </label>
+            <br>
+            <label >Phone number:
+                <input type="number" name="number" required >
+            </label>  
+            <br>
+            <label>Дата виконання тесту</label>
+            <input type="date" name="test-day" min="2018-03-02" max="2018-03-29">
+            <br>
+            <br>
+            <input type="submit" value="SEND">
         </form>
-        
     </section>
     </body>
 </html>
